@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   color: #6c7279;
   border-color: #fff;
-  
+
 }
 *,
 *:after,
@@ -27,7 +27,7 @@ p{
   margin: 0 auto;
 }
 
-/*----header----*/
+/*----Header----*/
 .header{
   width: 100%;
   height: 100px;
@@ -51,7 +51,7 @@ p{
 
 .header_logo{}
 
-/*----nav----*/
+/*----Nav----*/
 .nav{
   display: flex;
   font-size: 13px;
@@ -75,7 +75,7 @@ p{
   opacity: 1;
 }
 
-/*----intro----*/
+/*----Intro----*/
 .intro{
   justify-content: center;
   display: flex;
@@ -111,7 +111,7 @@ p{
   margin: 0 0 60px;
 }
 
-/*----btn----*/
+/*----Btn----*/
 .btn{
   border: 0;
   cursor: pointer;
@@ -134,4 +134,34 @@ p{
 .btn--red:hover {
 
   background: #e84545;
+}
+
+/*----Features----*/
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.features_item{
+  width: 30%;
+  padding: 0 40px;
+  text-align: center;
+  margin: 20px 0;
+
+}
+.features_icon{
+  margin-bottom: 20px;
+}
+.features_title{
+  font-size: 14px;
+  color: #2d3033;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features_text{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6c7279;
 }
