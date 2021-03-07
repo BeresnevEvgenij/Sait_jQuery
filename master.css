@@ -103,19 +103,20 @@ p{
 
 /*----Btn----*/
 .btn{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 14px 40px;
+  border-radius: 2px;
   border: 0;
   cursor: pointer;
   font-family: inherit;
   display: inline-block;
   vertical-align: top;
-  font-size: 13px;
   color: white;
-  font-weight: 600;
   text-transform: uppercase;
-  border-radius: 2px;
-  padding: 14px 40px;
   text-decoration: none;
   transition: background .4s linear;
+  text-align: center;
 }
 .btn--red{
   background: #dd3434;
@@ -123,7 +124,9 @@ p{
 .btn--red:hover {
   background: #e84545;
 }
-
+.btn--long{
+  min-width: 280px;
+}
 /*----Features----*/
 .features{
   display: flex;
@@ -303,4 +306,28 @@ p{
   font-weight: 700;
   text-transform: uppercase;
   color: white;
+}
+
+/*----Downloads----*/
+.downloads{
+  margin: 90px 0;
+  text-align: center;
+}
+.downloads_title{
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  color: #2d3033;
+}
+.downloads_text{
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #2d3033;
+}
+
+/*----Footer----*/
+.footer{
+  
 }
