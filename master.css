@@ -21,8 +21,9 @@ p{
 /*----Container----*/
 .container{
   width: 100%;
-  max-width: 1179px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*----Header----*/
@@ -163,12 +164,11 @@ p{
   height: 350px;
   border-bottom: 1px solid white;
   border-right: 1px solid white;
-  }
+}
 .works_item:hover .works_content{
   opacity: 1;
 }
 .works_img{
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -200,4 +200,64 @@ p{
 .works_text{
   font-size: 14px;
   color: white;
+}
+
+/*----Team----*/
+.team{
+  margin: 100px 0 70px;
+}
+.team_inner{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.team_item{
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.team_img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.team_name{
+  font-size: 22px;
+  color: #2d3003;
+  margin-bottom: 5px;
+}
+.team_prof{
+  font-size: 13px;
+  color: #dd3434;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.team_text{
+  font-size: 14px;
+  color: #6c7279;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/*----Social----*/
+.social{
+  display: flex;
+}
+.social_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #e8ecee;
+}
+.social_item:hover .social_icon{
+  fill: #000;
+}
+.social_icon{
+  display: block;
+  height: 18px;
+  fill: #c6cacc;
 }
