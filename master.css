@@ -247,6 +247,9 @@ p{
 .social{
   display: flex;
 }
+.social--footer{
+  justify-content: center;
+}
 .social_item{
   display: flex;
   justify-content: center;
@@ -329,5 +332,29 @@ p{
 
 /*----Footer----*/
 .footer{
-  
+  padding: 70px 0;
+
+  background-color: #3a3e64;
+}
+.footer_inner{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer_block{
+  width: 33%;
+  padding: 0 15px;
+  text-align: center;
+}
+.footer_title{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.footer_addres{
+  font-size: normal;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
 }
