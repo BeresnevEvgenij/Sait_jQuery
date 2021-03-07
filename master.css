@@ -261,3 +261,46 @@ p{
   height: 18px;
   fill: #c6cacc;
 }
+
+/*----Reviews----*/
+.reviews{
+  overflow: hidden;
+  background-color: #53354a;
+}
+.reviews_item{
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews_photo{
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.reviews_img{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.reviews_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+}
+.reviews_text{
+  margin-bottom: 25px;
+  font-family: 'Cardo', sans-serif;
+  font-style: italic;
+   font-size: 36px;
+   line-height: 1.2;
+   color: white;
+}
+.reviews_author{
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
