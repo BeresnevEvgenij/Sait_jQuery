@@ -35,6 +35,15 @@ p{
   left: 0;
   z-index: 1000;
 }
+.header.fixed{
+  height: auto;
+  background: #31344e;
+  position: fixed;
+}
+.header.fixed .header_inner{
+  padding: 15px 0;
+  border-bottom: 0;
+}
 .container{
   margin: 0 auto;
 }
