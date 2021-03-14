@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="master.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-  </script>
-  <title>Website-JQuery</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="master.css">
+    <title>Website-JQuery</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -54,15 +56,14 @@
       <div class="header_logo">
         <img src="img/activebox-logo.png" alt="">
       </div>
-      <div class="nav">
-        <a class="nav_link" href="#">Features</a>
-        <a class="nav_link" href="#">Works</a>
-        <a class="nav_link" href="#">Our team</a>
-        <a class="nav_link" href="#">Testimonials</a>
-        <a class="nav_link" href="#">Downloads</a>
-      </div>
-
-      <button class="burger" type="button">
+    <div class="nav" id="nav">
+      <a class="nav_link" href="#" data-scroll="#features">Features</a>
+      <a class="nav_link" href="#" data-scroll="#works">Works</a>
+      <a class="nav_link" href="#" data-scroll="#team">Our team</a>
+      <a class="nav_link" href="#" data-scroll="#reviews">Testimonials</a>
+      <a class="nav_link" href="#" data-scroll="#downloads">Downloads</a>
+    </div>
+      <button class="burger" type="button" id="navToggle">
         <span class="burger_item"></span>
       </button>
 
@@ -82,7 +83,7 @@
 </div>
 
 <!-- Features -->
-<div class="container">
+<div class="container" id="features">
   <div class="features">
    <div class="features_item">
      <img class="features_icon" src="img/feature-1.png" alt="">
@@ -118,7 +119,7 @@
 </div>
 
 <!-- Works -->
-<div class="works">
+<div class="works" id="works">
   <div class="works_item">
     <img class="works_img" src="img/work-1.jpg" alt="">
     <div class="works_content">
@@ -178,7 +179,7 @@
 </div>
 
 <!-- Team -->
-<div class="team">
+<div class="team" id="team">
   <div class="container">
     <div class="team_inner">
       <div class="team_item">
@@ -286,8 +287,11 @@
 </div>
 
 <!-- Reviews -->
-<div class="reviews">
+<div class="reviews" id="reviews">
   <div class="container">
+    <div class="reviews_slider" id="reviewsSlider">
+
+  <div class="slick-item">
     <div class="reviews_item">
       <div class="reviews_photo">
         <img class="reviews_img" src="img/review-1.jpg" alt="">
@@ -301,10 +305,27 @@
       </div>
     </div>
   </div>
+
+ <div class="slick-item">
+    <div class="reviews_item">
+      <div class="reviews_photo">
+        <img class="reviews_img" src="img/review-1.jpg" alt="">
+      </div>
+      <div class="reviews_content">
+        <div class="reviews_text">
+          “ ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure sed placeat laborum, labore explicabo impedit qui! Laudantium, unde voluptates sit animi tenetur veniam dolorem corrupti magnam, ipsum ab, recusandae!”
+        </div>
+         <div class="reviews_author">Susan Smit, interaction desinger at XYZ.</div>
+       </div>
+  </div>
+</div>
+    </div>
+
+  </div>
 </div>
 
 <!-- Downloads -->
-<div class="downloads">
+<div class="downloads" id="downloads">
   <div class="container">
     <h3 class="downloads_title">
       Are You ready to start? downloads now free!
@@ -364,6 +385,7 @@
 </footer>
 
 <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="master.js"></script>
 
 </body>
